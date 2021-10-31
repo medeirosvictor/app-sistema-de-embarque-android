@@ -1,11 +1,11 @@
-package com.victormedeiros.sistemadeembarque
+package com.unifor.sistemadeembarque
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class LeituraDeCartao : AppCompatActivity() {
+class CobradorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_leitura_de_cartao)
+        setContentView(R.layout.activity_cobrador)
     }
 }

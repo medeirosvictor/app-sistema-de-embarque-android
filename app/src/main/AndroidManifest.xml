@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.victormedeiros.sistemadeembarque">
+    package="com.unifor.sistemadeembarque">
 
     <application
         android:allowBackup="true"
@@ -10,37 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SistemaDeEmbarque">
         <activity
-            android:name=".CadastroActivity"
+            android:name="com.unifor.sistemadeembarque.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
-            android:exported="false" />
-        <activity
-            android:name=".LeituraDeCartao"
-            android:exported="false" />
-        <activity
-            android:name=".RelatorioDoDia"
-            android:exported="false" />
-        <activity
-            android:name=".MapaDaRota"
-            android:exported="false" />
-        <activity
-            android:name=".ListaDePassageiros"
-            android:exported="false" />
-        <activity
-            android:name=".OnibusActivity"
-            android:exported="false" />
-        <activity
-            android:name=".PassageiroActivity"
-            android:exported="false" />
-        <activity
-            android:name=".CobradorActivity"
+            android:name="com.unifor.sistemadeembarque.LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.unifor.sistemadeembarque.LeituraDeCartao"
+            android:exported="false" />
+        <activity
+            android:name="com.unifor.sistemadeembarque.RelatorioDoDia"
+            android:exported="false" />
+        <activity
+            android:name="com.unifor.sistemadeembarque.MapaDaRota"
+            android:exported="false" />
+        <activity
+            android:name="com.unifor.sistemadeembarque.ListaDePassageiros"
+            android:exported="false" />
+        <activity
+            android:name="com.unifor.sistemadeembarque.OnibusActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.unifor.sistemadeembarque.PassengerActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.unifor.sistemadeembarque.CobradorActivity"
+            android:exported="false">
         </activity>
     </application>
 

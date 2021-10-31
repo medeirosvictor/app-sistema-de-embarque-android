@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "877344894904",
+    "project_id": "sistemadeembarque",
+    "storage_bucket": "sistemadeembarque.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:877344894904:android:fce332e46cf653e052e94d",
+        "android_client_info": {
+          "package_name": "com.unifor.sistemadeembarque"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "877344894904-f6nkcbph32jc8pm6sh9h6kff21dimbpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.unifor.sistemadeembarque",
+            "certificate_hash": "ee513e2fd14cb47e375349619c48d48c7039e913"
+          }
+        },
+        {
+          "client_id": "877344894904-20kg22fcgnpb620o2afgc7l5llels7cp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAML3QrFUU7CCYbb4JfzxxUxJGBFfTrlXc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "877344894904-20kg22fcgnpb620o2afgc7l5llels7cp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

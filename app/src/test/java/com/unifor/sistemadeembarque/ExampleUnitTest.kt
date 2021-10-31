@@ -1,4 +1,4 @@
-package com.victormedeiros.sistemadeembarque
+package com.unifor.sistemadeembarque
 
 import org.junit.Test
 

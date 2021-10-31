@@ -1,11 +1,11 @@
-package com.victormedeiros.sistemadeembarque
+package com.unifor.sistemadeembarque
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ListaDePassageiros : AppCompatActivity() {
+class MapaDaRota : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_lista_de_passageiros)
+        setContentView(R.layout.activity_mapa_da_rota)
     }
 }

@@ -1,4 +1,4 @@
-package com.victormedeiros.sistemadeembarque
+package com.unifor.sistemadeembarque
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
