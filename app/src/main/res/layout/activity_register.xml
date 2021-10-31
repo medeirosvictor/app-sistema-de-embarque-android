@@ -8,29 +8,30 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_width="413dp"
+        android:layout_height="126dp"
+        android:layout_marginBottom="28dp"
         app:cardElevation="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/textView8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintTop_toTopOf="parent">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="128dp"
             android:background="@drawable/gradient1">
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
+                android:letterSpacing="0.1"
                 android:text="SISTEMA DE EMBARQUE"
                 android:textColor="@color/white"
                 android:textSize="24sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -68,11 +69,11 @@
     <Button
         android:id="@+id/registerButton"
         android:layout_width="203dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="38dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="28dp"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.548"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerType" />
 
@@ -93,21 +94,18 @@
         android:id="@+id/textView2"
         android:layout_width="177dp"
         android:layout_height="29dp"
-        android:layout_marginBottom="88dp"
         android:text="Ja possui uma conta?"
         android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBaseline_toBaselineOf="@+id/backToLoginTV"
         app:layout_constraintEnd_toStartOf="@+id/backToLoginTV"
-        app:layout_constraintHorizontal_bias="0.939"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerButton"
-        app:layout_constraintVertical_bias="0.488" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/backToLoginTV"
         android:layout_width="44dp"
         android:layout_height="28dp"
-        android:layout_marginEnd="108dp"
+        android:layout_marginEnd="88dp"
         android:layout_marginBottom="88dp"
         android:text="Login"
         android:textSize="16sp"
@@ -115,7 +113,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerButton"
-        app:layout_constraintVertical_bias="0.478" />
+        app:layout_constraintVertical_bias="0.396" />
 
     <Spinner
         android:id="@+id/registerType"
