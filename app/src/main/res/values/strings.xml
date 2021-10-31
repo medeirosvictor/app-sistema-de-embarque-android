@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SistemaDeEmbarque</string>
+
+    <string-array name="user_type">
+        <item>Passageiro</item>
+        <item>Cobrador</item>
+    </string-array>
 </resources>

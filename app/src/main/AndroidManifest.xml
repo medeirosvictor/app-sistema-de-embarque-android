@@ -40,7 +40,7 @@
             android:name="com.unifor.sistemadeembarque.PassengerActivity"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.CobradorActivity"
+            android:name="com.unifor.sistemadeembarque.CashierActivity"
             android:exported="false">
         </activity>
     </application>

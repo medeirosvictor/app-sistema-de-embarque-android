@@ -7,18 +7,17 @@ import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.auth.AuthResult
 import android.os.Bundle
 import android.text.TextUtils
-import android.widget.Button
-import android.widget.EditText
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import com.google.android.gms.tasks.OnCompleteListener
-import org.w3c.dom.Text
+import com.google.firebase.database.*
 
 class RegisterActivity : AppCompatActivity() {
     private lateinit var registerButton: Button
     private lateinit var registerEmail: EditText
     private lateinit var registerPassword: EditText
     private lateinit var backToLoginTV: TextView
+    private lateinit var database: DatabaseReference
+    private lateinit var registerType: Spinner
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,11 +40,11 @@ class RegisterActivity : AppCompatActivity() {
                         "Por favor entre com uma senha valida",
                         Toast.LENGTH_SHORT
                     ).show()
-                }
+                } else -> {
 
-                else -> {
                     val email: String = registerEmail.text.toString().trim { it <= ' ' }
                     val password: String = registerPassword.text.toString().trim { it <= ' ' }
+                    val type: String = registerType.selectedItem.toString().trim { it <= ' ' }
 
                     FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password)
                         .addOnCompleteListener(
@@ -53,20 +52,39 @@ class RegisterActivity : AppCompatActivity() {
                                 if (task.isSuccessful) {
                                     val firebaseUser:FirebaseUser = task.result!!.user!!
 
+                                    database = FirebaseDatabase.getInstance().getReference("Users")
+
+                                    val user = User(firebaseUser.uid, email, email, 0.0, type)
+
+                                    database.child(replacer(firebaseUser.uid)).setValue(user).addOnCompleteListener { task ->
+                                        if (task.isSuccessful) {
+                                            registerEmail.text.clear()
+                                            registerPassword.text.clear()
+                                        } else {
+                                            print(task.exception!!.message.toString())
+                                        }
+                                    }
+
                                     Toast.makeText(
                                         this@RegisterActivity,
                                         "Cadastro Completo!",
                                         Toast.LENGTH_SHORT
                                     ).show()
 
-
-                                    // Send new user directly to it's respective Activity ( Cobrador / Passageiro )
-                                    val intent = Intent(this@RegisterActivity, PassengerActivity::class.java)
+                                    var intent = Intent(this@RegisterActivity, PassengerActivity::class.java)
                                     intent.flags = Intent.FLAG_ACTIVITY_NEW_TASK or Intent.FLAG_ACTIVITY_CLEAR_TASK
                                     intent.putExtra("user_id", firebaseUser.uid)
                                     intent.putExtra("email_id", email)
+
+                                    if (type == "Cobrador") {
+                                        // Send new user directly to it's respective Activity ( Cobrador / Passageiro )
+                                        intent = Intent(this@RegisterActivity, CashierActivity::class.java)
+                                    }
+
                                     startActivity(intent)
                                     finish()
+
+
                                 } else {
                                     // Failed creation
                                     Toast.makeText(
@@ -88,10 +106,19 @@ class RegisterActivity : AppCompatActivity() {
         }
     }
 
+    private fun replacer(t: String): String {
+        return t.replace(".", "")
+            .replace("#", "")
+            .replace("\$", "")
+            .replace("[", "")
+            .replace("]", "")
+    }
+
     private fun initView() {
         registerButton = findViewById<Button>(R.id.registerButton)
         registerEmail = findViewById<EditText>(R.id.registerEmailTV)
         registerPassword = findViewById<EditText>(R.id.registerPassword)
+        registerType = findViewById<Spinner>(R.id.registerType)
         backToLoginTV = findViewById<TextView>(R.id.backToLoginTV)
     }
 }

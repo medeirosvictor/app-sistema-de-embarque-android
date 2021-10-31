@@ -56,7 +56,7 @@
         android:id="@+id/registerEmailTV"
         android:layout_width="266dp"
         android:layout_height="55dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="32dp"
         android:ems="10"
         android:hint="Email"
         android:inputType="textEmailAddress"
@@ -65,31 +65,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
-    <!--    <Spinner-->
-<!--        android:id="@+id/spinner2"-->
-<!--        android:layout_width="264dp"-->
-<!--        android:layout_height="53dp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.51"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        tools:ignore="SpeakableTextPresentCheck"-->
-<!--        tools:layout_editor_absoluteY="457dp" />-->
-
     <Button
         android:id="@+id/registerButton"
         android:layout_width="203dp"
         android:layout_height="0dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="38dp"
         android:text="Cadastrar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.548"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/registerType" />
 
     <EditText
         android:id="@+id/registerPassword"
         android:layout_width="266dp"
         android:layout_height="48dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:ems="10"
         android:hint="Senha"
         android:inputType="textPassword"
@@ -125,5 +116,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerButton"
         app:layout_constraintVertical_bias="0.478" />
+
+    <Spinner
+        android:id="@+id/registerType"
+        android:layout_width="264dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="61dp"
+        android:entries="@array/user_type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

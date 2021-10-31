@@ -3,9 +3,9 @@ package com.unifor.sistemadeembarque
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class CobradorActivity : AppCompatActivity() {
+class CashierActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cobrador)
+        setContentView(R.layout.activity_cashier)
     }
 }
