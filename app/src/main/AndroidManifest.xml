@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.victormedeiros.sistemadeembarque">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SistemaDeEmbarque">
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LeituraDeCartao"
+            android:exported="false" />
+        <activity
+            android:name=".RelatorioDoDia"
+            android:exported="false" />
+        <activity
+            android:name=".MapaDaRota"
+            android:exported="false" />
+        <activity
+            android:name=".ListaDePassageiros"
+            android:exported="false" />
+        <activity
+            android:name=".OnibusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PassageiroActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CobradorActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
