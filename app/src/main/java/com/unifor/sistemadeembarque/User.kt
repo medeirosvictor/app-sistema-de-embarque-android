@@ -8,5 +8,7 @@ data class User(
     val name: String? = null,
     val email: String? = null,
     val balance: Double? = 00.00,
-    val type: String? = null
+    val type: String? = null,
+    val profile_picture: String? = null,
+    val vaigens
 )

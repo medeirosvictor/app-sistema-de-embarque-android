@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/drawable/buspic_background.xml" value="0.3828125" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/drawable/gradient1.xml" value="0.3828125" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/drawable/login_box.xml" value="0.3828125" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_cadastro.xml" value="0.3269927536231884" />
@@ -15,7 +16,7 @@
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_mapa_da_rota.xml" value="0.3269927536231884" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_onibus.xml" value="0.33" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_passageiro.xml" value="0.33" />
-        <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_passenger.xml" value="0.3269927536231884" />
+        <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_passenger.xml" value="0.5" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_register.xml" value="0.29178470254957506" />
       </map>
     </option>

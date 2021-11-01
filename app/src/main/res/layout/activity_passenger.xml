@@ -87,11 +87,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="312dp"
-        android:layout_height="162dp"
+        android:layout_width="372dp"
+        android:layout_height="189dp"
         app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
@@ -100,17 +100,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30px"
-            tools:src="@tools:sample/avatars" />
+            android:visibility="visible"
+            tools:src="@tools:sample/avatars"
+            tools:visibility="visible" />
 
         <LinearLayout
-            android:layout_width="143dp"
-            android:layout_height="135dp"
+            android:layout_width="202dp"
+            android:layout_height="139dp"
             android:layout_margin="30px"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/passengerEmailTV"
-                android:layout_width="wrap_content"
+                android:layout_width="192dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
@@ -118,7 +120,7 @@
 
             <TextView
                 android:id="@+id/textView3"
-                android:layout_width="wrap_content"
+                android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
@@ -126,7 +128,7 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="wrap_content"
+                android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
