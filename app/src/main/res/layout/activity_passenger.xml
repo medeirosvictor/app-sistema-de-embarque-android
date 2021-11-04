@@ -7,7 +7,7 @@
     tools:context=".PassengerActivity">
 
     <Button
-        android:id="@+id/button17"
+        android:id="@+id/passengerProfileEditButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
         android:layout_marginTop="28dp"
@@ -15,10 +15,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button7" />
+        app:layout_constraintTop_toBottomOf="@+id/addFundsButton" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/addFundsButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
         android:layout_marginTop="24dp"
@@ -26,10 +26,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
+        app:layout_constraintTop_toBottomOf="@+id/passengerTripHistroryButton" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/passengerTripHistroryButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
         android:layout_marginTop="24dp"
@@ -37,10 +37,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button5" />
+        app:layout_constraintTop_toBottomOf="@+id/passengerMapButton" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/passengerMapButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
         android:layout_marginTop="24dp"
@@ -48,10 +48,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/passengerPayButton" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/passengerPayButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
         android:layout_marginTop="36dp"
@@ -89,14 +89,14 @@
         android:id="@+id/linearLayout"
         android:layout_width="372dp"
         android:layout_height="189dp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/passengerPayButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.487"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/passengerProfilePic"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="30px"
@@ -116,10 +116,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:text="Passageiro Fulano" />
+                android:text="Passageiro Nome" />
 
             <TextView
-                android:id="@+id/textView3"
+                android:id="@+id/currentTripLineTV"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
@@ -127,12 +127,12 @@
                 android:text="Linha: 041" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/passengerBalanceTV"
                 android:layout_width="190dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10px"
                 android:layout_marginBottom="10px"
-                android:text="Saldo:" />
+                android:text="Saldo: 00,00" />
         </LinearLayout>
 
     </LinearLayout>

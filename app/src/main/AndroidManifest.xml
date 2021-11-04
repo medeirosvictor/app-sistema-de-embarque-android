@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SistemaDeEmbarque">
         <activity
-            android:name="com.unifor.sistemadeembarque.RegisterActivity"
+            android:name=".AddFundsActivity"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.LoginActivity"
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,27 +25,26 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.unifor.sistemadeembarque.LeituraDeCartao"
+            android:name=".LeituraDeCartao"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.RelatorioDoDia"
+            android:name=".RelatorioDoDia"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.MapaDaRota"
+            android:name=".MapaDaRota"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.ListaDePassageiros"
+            android:name=".ListaDePassageiros"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.OnibusActivity"
+            android:name=".OnibusActivity"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.PassengerActivity"
+            android:name=".PassengerActivity"
             android:exported="false" />
         <activity
-            android:name="com.unifor.sistemadeembarque.CashierActivity"
-            android:exported="false">
-        </activity>
+            android:name=".CashierActivity"
+            android:exported="false"></activity>
     </application>
 
 </manifest>

@@ -10,5 +10,7 @@ data class User(
     val balance: Double? = 00.00,
     val type: String? = null,
     val profile_picture: String? = null,
-    val vaigens
+    val trips: MutableList<Trip>? = null,
+    val activeTrip: Trip? = null,
+    val status: String? = "inativo"
 )

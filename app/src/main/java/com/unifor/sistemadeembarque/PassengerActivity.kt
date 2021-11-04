@@ -3,6 +3,7 @@ package com.unifor.sistemadeembarque
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -13,6 +14,8 @@ import org.w3c.dom.Text
 
 class PassengerActivity : AppCompatActivity() {
     private lateinit var passengerEmail: TextView
+    private lateinit var passengerBalance: TextView
+    private lateinit var addFundsButton: Button
     private lateinit var database: DatabaseReference
 
 
@@ -21,11 +24,19 @@ class PassengerActivity : AppCompatActivity() {
         setContentView(R.layout.activity_passenger)
         initView()
         initFirebaseData()
+
+        addFundsButton.setOnClickListener {
+            var intent = Intent(this@PassengerActivity, AddFundsActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
     }
 
 
     private fun initView() {
         passengerEmail = findViewById<TextView>(R.id.passengerEmailTV)
+        passengerBalance = findViewById<TextView>(R.id.passengerBalanceTV)
+        addFundsButton = findViewById<Button>(R.id.addFundsButton)
     }
 
     private fun initFirebaseData() {
@@ -34,9 +45,14 @@ class PassengerActivity : AppCompatActivity() {
 
         database = FirebaseDatabase.getInstance().getReference("Users")
         val uid = replacer(FirebaseAuth.getInstance().currentUser?.uid.toString())
+
+
         database.child(uid).get().addOnSuccessListener {
             if (it.exists()) {
                 passengerEmail.text = "Email: " + it.child("email").value.toString()
+                passengerBalance.text = "Saldo: R$" + it.child("balance").value.toString()
+                val currentTrip = Trip()
+
                 Toast.makeText(
                     this@PassengerActivity,
                     "Usuario logado",
