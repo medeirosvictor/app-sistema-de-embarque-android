@@ -19,6 +19,17 @@
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_passageiro.xml" value="0.33" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_passenger.xml" value="0.5" />
         <entry key="..\:/Users/victo/AndroidStudioProjects/SistemaDeEmbarque/app/src/main/res/layout/activity_register.xml" value="0.29178470254957506" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_add_funds.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_cashier.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_gpsdemo.xml" value="0.5" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_leitura_de_cartao.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_lista_de_passageiros.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_login.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_mapa_da_rota.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_onibus.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_passenger.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_register.xml" value="0.2957427536231884" />
+        <entry key="..\:/app-sistema-de-embarque-android/app/src/main/res/layout/activity_relatorio_do_dia.xml" value="0.2957427536231884" />
       </map>
     </option>
   </component>

@@ -30,10 +30,19 @@
         app:layout_constraintStart_toStartOf="@+id/toolbar"
         app:layout_constraintTop_toTopOf="@+id/toolbar" />
 
-    <com.google.android.gms.maps.MapView
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+
+    <!--<com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
         android:layout_width="351dp"
         android:layout_height="536dp"
         tools:layout_editor_absoluteX="30dp"
         tools:layout_editor_absoluteY="72dp" />
+    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
