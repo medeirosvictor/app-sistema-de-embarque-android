@@ -17,6 +17,7 @@ class PassengerActivity : AppCompatActivity() {
     private lateinit var passengerBalance: TextView
     private lateinit var addFundsButton: Button
     private lateinit var database: DatabaseReference
+    private lateinit var passengerMapButton: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,6 +31,12 @@ class PassengerActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        passengerMapButton.setOnClickListener{
+            val intent = Intent(this, MapaDaRota::class.java)
+            startActivity(intent)
+        }
+
     }
 
 
@@ -37,6 +44,7 @@ class PassengerActivity : AppCompatActivity() {
         passengerEmail = findViewById<TextView>(R.id.passengerEmailTV)
         passengerBalance = findViewById<TextView>(R.id.passengerBalanceTV)
         addFundsButton = findViewById<Button>(R.id.addFundsButton)
+        passengerMapButton = findViewById<Button>(R.id.passengerMapButton)
     }
 
     private fun initFirebaseData() {
