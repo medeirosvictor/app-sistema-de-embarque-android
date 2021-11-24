@@ -52,7 +52,7 @@
             android:exported="false" />
         <activity
             android:name=".MapaDaRota"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".ListaDePassageiros"
             android:exported="false" />

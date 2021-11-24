@@ -31,6 +31,12 @@ class PassengerActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
+
+        passengerMapButton.setOnClickListener{
+            val intent = Intent(this, MapaDaRota::class.java)
+            startActivity(intent)
+        }
+
     }
 
 

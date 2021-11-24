@@ -71,9 +71,16 @@ import com.google.android.gms.maps.model.MarkerOptions
                 if (location != null) {
                     lastLocation = location
                     val currentLatLng = LatLng(location.latitude, location.longitude)
+                    placeMarkerOnMap(currentLatLng)
                     map.animateCamera(CameraUpdateFactory.newLatLngZoom(currentLatLng, 12f))
                 }
             }
+        }
+        private fun placeMarkerOnMap(location: LatLng) {
+            // 1
+            val markerOptions = MarkerOptions().position(location)
+            // 2
+            map.addMarker(markerOptions)
         }
 
         override fun onMarkerClick(p0: Marker): Boolean {
