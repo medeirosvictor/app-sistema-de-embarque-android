@@ -18,6 +18,18 @@
         app:layout_constraintTop_toBottomOf="@+id/addFundsButton" />
 
     <Button
+        android:id="@+id/passengerProfileEditButton2"
+        android:layout_width="133dp"
+        android:layout_height="36dp"
+        android:onClick="resposta"
+        android:text="Thread"
+        app:layout_constraintBottom_toTopOf="@+id/passengerPayButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <Button
         android:id="@+id/addFundsButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
@@ -54,10 +66,10 @@
         android:id="@+id/passengerPayButton"
         android:layout_width="310dp"
         android:layout_height="61dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="72dp"
         android:text="Passe ja"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
@@ -87,11 +99,11 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="372dp"
-        android:layout_height="189dp"
+        android:layout_width="359dp"
+        android:layout_height="162dp"
         app:layout_constraintBottom_toTopOf="@+id/passengerPayButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintHorizontal_bias="0.41"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/toolbar">
 

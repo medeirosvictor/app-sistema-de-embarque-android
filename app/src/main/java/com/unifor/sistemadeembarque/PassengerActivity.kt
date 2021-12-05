@@ -3,6 +3,8 @@ package com.unifor.sistemadeembarque
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
@@ -19,6 +21,17 @@ class PassengerActivity : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private lateinit var passengerMapButton: Button
 
+    fun resposta(view: View){
+        val thread: Thread = Thread(MyRunnable())
+        thread.start()
+        thread.run()
+    }
+
+    class MyRunnable: Runnable {
+        override fun run(){
+            Log.i("THREAD", "My Runnable")
+        }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
